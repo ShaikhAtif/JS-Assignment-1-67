@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- <script src="app.js"></script> -->
+    <!-- Chapter 1 -->
+<!-- 7(a) -->
+<script>
+    alert("Alert in head for question 7");
+</script>
+
+</head>
+<body>
+<!-- 6 -->
+<script>
+    alert("Alert In HTML");
+</script>
+<!-- 7 -->
+<!-- (b) -->
+<script>
+    alert("Alert in body before html for question 7");
+</script>
+
+<h1 style="color: rebeccapurple;">My Assignment</h1>
+
+
+<br><br><br><br>
+<p>-------------------------------------------------------------------------------------------</p>
+<br><br><br><br>
+
+
+
+<!-- (c) -->
+<script>
+    alert("Alert in body inside html for question 7");
+</script>
+<h2 style="color: rebeccapurple;">My Assignment</h2>
+
+<!-- (d) -->
+<script>
+alert("Alert in body after html for question 7");
+</script>
+<!-- //chapters 43-48
+//Question 1 -->
+<script>
+    function click() {
+    alert("You are about to leave the current page");
+}
+</script>
+<a href='http://www.google.com' onclick='check()'>check</a>
+
+<!--chapters 43-48 Question 2  -->
+<script>
+    function alertbox() {
+    alert("Thank you for purchasing from us");
+}
+</script>
+<div style="width: 100%;">
+    <table>
+        <tr>
+            <td><img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="" style="padding:10px 10px 2px 15px;width:80%;" onclick="alertbox()"></td>
+            <td><img src="https://images.ctfassets.net/d6skzop43my5/6OyxwWln6Ke5UuX8hHLzZZ/5ae77b5f60dada8a8be63a0102ac7e45/nokia_5_3-front-cyan.png?q=50" alt="" style="padding:10px 10px 2px 10px;width:80%;" onclick="alertbox()"></td>
+            <td><img src="https://static.toiimg.com/photo/73078527.cms" alt="" style="padding:10px 10px 2px 10px;width:80%;" onclick="alertbox()"></td>
+            <td><img src="https://i.gadgets360cdn.com/large/poco_x2_Front_ndtv_1580825988736.jpg?downsize=910:*&output-quality=80" alt="" style="padding:10px 15px 2px 10px;width:80%;" onclick="alertbox()"></td>
+        </tr>
+    </table> 
+ </div>
+
+ <!--chapters 43-48 Question 3 -->
+ <table id="myTable">
+    <tr>
+        <th>Index</th>
+        <th>Name</th>
+        <th>Class</th>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>Jhone</td>
+        <td>10</td>
+        <td>
+            <input type="button" value="Delete" onclick="delrow(this)">
+        </td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Jhone</td>
+        <td>10</td>
+        <td>
+            <input type="button" value="Delete" onclick="delrow(this)">
+        </td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Jhone</td>
+        <td>10</td>
+        <td>
+            <input type="button" value="Delete" onclick="delrow(this)">
+        </td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Jhone</td>
+        <td>10</td>
+        <td>
+            <input type="button" value="Delete" onclick="delrow(this)">
+        </td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>thrica</td>
+        <td>10</td>
+        <td>
+            <input type="button" value="Delete" onclick="delrow(this)">
+        </td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>sadqain</td>
+        <td>2</td>
+        <td>
+            <input type="button" value="Delete" onclick="delrow(this)">
+        </td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>qarshi</td>
+        <td>8</td>
+        <td>
+            <input type="button" value="Delete" onclick="delrow(this)">
+        </td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>bushra</td>
+        <td>12</td>
+        <td>
+            <input type="button" value="Delete" onclick="delrow(this)">
+        </td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>Jhone</td>
+        <td>10</td>
+        <td>
+            <input type="button" value="Delete" onclick="delrow(this)">
+        </td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>Ahmed</td>
+        <td>11</td>
+        <td>
+            <input type="button" value="Delete" onclick="delrow(this)">
+        </td>
+    </tr>
+</table>
+
+<script>
+    function delrow(r) {
+        var i = r.parentNode.parentNode.rowIndex;
+        document.getElementById("myTable").deleteRow(i);
+    }
+</script>
+
+<!--chapters 43-48 Question 4 -->
+<img title="Hello" style="width: 500px; height: 300px;" src="https://1.bp.blogspot.com/-MdaQwrpT4Gs/Xdt-ff_hxEI/AAAAAAAAQXE/oOgnysGd9LwoFLMHJ0etngKzXxmQkWc5ACLcBGAsYHQ/s400/Beautiful-Backgrounds%2B%2528122%2529.jpg" onmouseover="this.src='https://static.toiimg.com/photo/72975551.cms'" onmouseout="this.src='https://1.bp.blogspot.com/-MdaQwrpT4Gs/Xdt-ff_hxEI/AAAAAAAAQXE/oOgnysGd9LwoFLMHJ0etngKzXxmQkWc5ACLcBGAsYHQ/s400/Beautiful-Backgrounds%2B%2528122%2529.jpg'" />
+
+<!--chapters 43-48 Question 5 -->
+<script>
+var clicks = 0;
+function increase() {
+    clicks += 1;
+    document.getElementById("clicks").innerHTML = clicks;
+}
+function decrease() {
+    clicks -= 1;
+    document.getElementById("clicks").innerHTML = clicks;
+}
+</script>
+<center>
+    <br><br><br>
+    <button type="button" onClick="increase()">Increase</button>
+    <button type="button" onClick="decrease()">Decrease</button>
+    <p>Clicks: <a id="clicks">0</a></p>
+</center>
+
+<!-- Chapter 49-52 -->
+<!-- Question 1 -->
+<script>
+    function submitbtn(){
+    var firstName = document.getElementById("fname").value;
+    var lastName = document.getElementById("lname").value;
+    var email = document.getElementById("mail").value;
+    var city = document.getElementById("city").value;
+
+    document.write("First Name: " + firstName + "<br>" + "Last Name: " + lastName + "<br>" + "Email ID: " + email + "<br>" + "Current City: " + city);
+}
+document.write("<br>" + "<br>" + "<br>" + "------------------------------------------------------------------------------------------" + "<br>" + "<br>" + "<br>" + "<br>")
+</script>
+<h2 style="color: brown; margin-left: 25px;">SIGN UP FORM</h2>
+<div style="border: 2px solid blue; border-radius: 30px; height: auto; width: 400px; padding: 10px; padding-left: 20px;">
+    <form action="" onsubmit="submitbtn()">
+        <!-- <legend style="border: 1px solid blue; border-radius: 30px; padding: 5px; color: blueviolet;"></legend> -->
+        Enter first name:
+        <br>
+        <input id="fname" type="text">
+        <br>
+        <br>
+
+        Enter last name:  
+        <br>
+        <input id="lname" type="text">
+        <br>
+        <br>
+
+        Enter Email ID:
+        <br>
+        <input id="mail" type="email">
+        <br>
+        <br>
+
+        Enter current city:
+        <br>
+        <input id="city" type="text">
+        <br><br>
+
+        <button >submit</button>
+    </form>
+</div>
+<br><br><br><br>
+<p>-------------------------------------------------------------------------------------------</p>
+<br><br><br><br>
+
+<!--chapters 49-52 Question 2 -->
+<script>
+    function seemore(){
+    var s = document.getElementById("details");
+    var text = "You got a problem, we solve it. We specialized in Basic and intermediate probleams of daily life. Hope we see u more often"
+    s.innerHTML = text;
+}
+</script>
+<p id="details">
+    Our website offers generic solutions. Fore more info <a href="javascript:void()" onclick="seemore()">Read more</a>
+</p>
+
+<!--chapters 49-52 Question 3 -->
+<style>
+    .hidden {
+        display: none;
+    }
+
+    .outline {
+        border: 2px solid black;
+        width: 32em;
+        z-index: 1;
+        padding:5px 10px 5px 10px
+    }
+    td,tr{
+        padding:0px 10px 0px 10px;
+    }
+    table{
+        margin-left: 20px;
+        text-align: center;
+    }
+</style>
+<form class="hidden outline" action="" id="form">
+    Name :<input type="text" name="" id="name">
+    <br><br>
+    Class :<input type="text" name="" id="class">
+    <br><br>
+    <input type="button" value="Update" onclick="Update()">
+</form>
+<br>
+<br>
+<br>
+<table id="myTable2">
+    <tr>
+        <th>Index</th>
+        <th>Name</th>
+        <th>Class</th>
+    </tr>
+    <tr>
+        <td id="">0</td>
+        <td id="">Jhone</td>
+        <td id="">10</td>
+        <td class="0">
+            <input type="button" value="Delete" onclick="delRow(this)">
+        </td>
+        <td class="0">
+            <input type="button" value="Edit" onclick="editRow(this)">
+        </td>
+    </tr>
+    <tr>
+        <td id="">1</td>
+        <td id="">Jhone</td>
+        <td id="">10</td>
+        <td class="1">
+            <input type="button" value="Delete" onclick="delRow(this)">
+        </td>
+        <td class="1">
+            <input type="button" value="Edit" onclick="editRow(this)">
+        </td>
+    </tr>
+    <tr>
+        <td id="">2</td>
+        <td id="">Jhone</td>
+        <td id="">10</td>
+        <td class="2">
+            <input type="button" value="Delete" onclick="delRow(this)">
+        </td>
+        <td class="2">
+            <input type="button" value="Edit" onclick="editRow(this)">
+        </td>
+    </tr>
+    <tr>
+        <td id="">3</td>
+        <td id="">Jhone</td>
+        <td id="">10</td>
+        <td class="3">
+            <input type="button" value="Delete" onclick="delRow(this)">
+        </td>
+        <td class="3">
+            <input type="button" value="Edit" onclick="editRow(this)">
+        </td>
+    </tr>
+    <tr>
+        <td id="">4</td>
+        <td id="">thrica</td>
+        <td id="">10</td>
+        <td class="4">
+            <input type="button" value="Delete" onclick="delRow(this)">
+        </td>
+        <td class="4">
+            <input type="button" value="Edit" onclick="editRow(this)">
+        </td>
+    </tr>
+    <tr>
+        <td id="">5</td>
+        <td id="">sadqain</td>
+        <td id="">2</td>
+        <td class="5">
+            <input type="button" value="Delete" onclick="delRow(this)">
+        </td>
+        <td class="5">
+            <input type="button" value="Edit" onclick="editRow(this)">
+        </td>
+    </tr>
+    <tr>
+        <td id="">6</td>
+        <td id="">qarshi</td>
+        <td id="">8</td>
+        <td class="6">
+            <input type="button" value="Delete" onclick="delRow(this)">
+        </td>
+        <td class="6">
+            <input type="button" value="Edit" onclick="editRow(this)">
+        </td>
+    </tr>
+    <tr>
+        <td id="">7</td>
+        <td id="">bushra</td>
+        <td id="">12</td>
+        <td class="7">
+            <input type="button" value="Delete" onclick="delRow(this)">
+        </td>
+        <td class="7">
+            <input type="button" value="Edit" onclick="editRow(this)">
+        </td>
+    </tr>
+    <tr>
+        <td id="">8</td>
+        <td id="">Sins</td>
+        <td id="">10</td>
+        <td class="8">
+            <input type="button" value="Delete" onclick="delRow(this)">
+        </td>
+        <td class="8">
+            <input type="button" value="Edit" onclick="editRow(this)">
+        </td>
+    </tr>
+    <tr>
+        <td id="">9</td>
+        <td id="">Ahmed</td>
+        <td id="">11</td>
+        <td class="9">
+            <input type="button" value="Delete" onclick="delRow(this)">
+        </td>
+        <td class="9">
+            <input type="button" value="Edit" onclick="editRow(this)">
+        </td>
+    </tr>
+</table>
+
+<script>
+    var editvar, disable1, disable2,Name,Class;
+    function delRow(r) {
+        var i = r.parentNode.parentNode.rowIndex;
+        document.getElementById("myTable2").deleteRow(i);
+    }
+    function editRow(r) {
+        editvar = r.parentNode.parentNode;
+        document.getElementById("form").className = "outline";
+
+        for (let index = 0; index < 10; index++) {
+            document.getElementsByClassName(index)[1].childNodes[1].disabled = true;
+            document.getElementsByClassName(index)[0].childNodes[1].disabled = true;
+        }
+
+    }
+    function Update() {
+        document.getElementById("form").className += " hidden";
+        Name=document.getElementById("name");
+        Class =document.getElementById("class");
+        editvar.childNodes[3].innerHTML = Name.value;
+        editvar.childNodes[5].innerHTML = Class.value;
+        Name.value="";
+        Class.value="";
+        for (let index = 0; index < 10; index++) {
+            document.getElementsByClassName(index)[1].childNodes[1].disabled = false;
+            document.getElementsByClassName(index)[0].childNodes[1].disabled = false;
+        }
+    }
+</script>
+
+<!-- chapters 52-57 
+Question 1 -->
+<script>
+    function appear(e)
+{
+    var modalImage = document.getElementById("modalImage")
+    modalImage.src = e.src;
+}
+</script>
+<div>
+    <img onclick="appear(this)" data-toggle="modal" data-target="#exampleModal" src="3.jpg" alt=""
+    height="200px" width="200px" class="img">
+    <img onclick="appear(this)" data-toggle="modal" data-target="#exampleModal" src="4.png" alt=""
+    height="200px" width="200px">
+    <img onclick="appear(this)" data-toggle="modal" data-target="#exampleModal" src="5.jpg" alt=""
+    height="200px" width="200px">
+    <img onclick="appear(this)" data-toggle="modal" data-target="#exampleModal" src="6.jpg" alt=""
+    height="200px" width="200px">
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content" style="background-color:black !important">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <div class="modal-body">
+      <img src="" alt="" id="modalImage" height="100%" width="100%"/>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<br><br><br><br>
+<p>-------------------------------------------------------------------------------------------</p>
+<br><br><br><br>
+
+<!--chapters 52-57 Question 2 -->
+<script>
+    var font = 10;
+function zoomIn()
+{
+
+    var paragraph12 = document.getElementById("paragraph");
+    font +=10;
+    paragraph12.style.fontSize = font + "px";
+}
+function zoomOut()
+{
+    var paragraph12 = document.getElementById("paragraph");
+    font -= 10;
+    paragraph12.style.fontSize = font + "px";
+}
+</script>
+<div>
+    <p id="paragraph">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error eaque maiores nisi fuga. 
+      Perferendis pariatur magni modi 
+      tempore repellat praesentium, id odit blanditiis adipisci dolores? Ipsam deserunt sed cupiditate quis? 
+    </p>
+    <button style="background-color: chartreuse; color: black;
+    border-radius: 40px; padding: 10px;" onclick="zoomIn()">zoom in</button>
+    <button style="background-color: chartreuse; color: black;
+    border-radius: 40px; padding: 10px;" onclick="zoomOut()">zoom out</button>
+    
+  </div>  
+
+
+<br><br><br><br>
+<p>-------------------------------------------------------------------------------------------</p>
+<br><br><br><br>
+
+<!-- chapter 58-67 Question 1 & 2 -->
+<script>
+//chapters 58-67
+//1
+//(i)
+
+var main2 = document.getElementById("main-content");
+
+//(ii)
+for(var i=0; i<main2.childNodes.length; i++)
+console.log(main2.childNodes[i]);
+
+//(iii)
+var rend = document.getElementsByClassName("render");
+document.write("<br>" + "<br>" + "<br>" + "------------------------------------------------------------" + "<br>" + "<br>");
+
+for(var i=0; i<rend.length; i++)
+document.write(rend[i].innerHTML + "<br>");
+
+
+//(iv)
+document.write("<br>" + "<br>" + "<br>" + "------------------------------------------------------------" + "<br>" + "<br>");
+var fname11 = document.getElementById("first-name");
+fname11.value = "Gul";
+
+
+//(v)
+var lname11 = document.getElementById("last-name");
+lname11.value = "Noureen";
+
+var mail11 = document.getElementById("email");
+mail11.value = "noureeng334@gmail.com";
+
+
+//2
+//(i)
+
+var type1 = document.getElementById("form-content");
+document.write(type1.nodeType);
+
+//(ii)
+
+document.write("<br>" + "<br>" + "<br>" + "------------------------------------------------------------" + "<br>" + "<br>");
+
+var lname12 = document.getElementById("lastName");
+document.write(lname12.nodeType);
+
+document.write("<br>" + "<br>" + "<br>" + "------------------------------------------------------------" + "<br>" + "<br>");
+
+document.write(lname12.childNodes.nodeType);
+
+//(iii)
+
+document.write("<br>" + "<br>" + "<br>" + "------------------------------------------------------------" + "<br>" + "<br>");
+lname12.innerHTML = "Last Name : Habbeb" 
+document.write(lname12.innerHTML);
+
+document.write("<br>" + "<br>" + "<br>" + "------------------------------------------------------------" + "<br>" + "<br>");
+
+
+//(iv)
+
+var main3 = document.getElementById("main-content");
+var fchild = main3.firstChild;
+var lchild = main3.lastChild;
+console.log(fchild);
+console.log(lchild)
+
+//(v)
+
+var lname13 = document.getElementById("lastName");
+var psibling = lname13.previousSibling;
+var nsibling = lname13.nextSibling;
+
+console.log(psibling);
+console.log(nsibling);
+
+//(vi)
+var mail12 = document.getElementById("email");
+var pnode = mail12.parentNode;
+var type2 = mail12.nodeType;
+
+console.log(pnode);
+console.log(type2);
+
+</script>
+
+<div> 
+    <h1> DOM </h1> 
+    <div id="form-content" class="content"> 
+        <label for="first-name">First Name</label> 
+        <input type="text" id="first-name" /> 
+        <label for="last-name">Last Name</label> 
+        <input type="text" id="last-name" /> 
+        <label for="email">Email</label> 
+        <input type="text" id="email" /> 
+    </div> 
+    <div id="main-content" class="content"
+        ><p class="render"> First Name : Alex</p
+        ><p class="render" id="lastName">Last Name: Bank</p
+        ><p class="render"> Email : alexbank@example.com</p
+        ><p class="render"> Country : Pakistan </p
+        ><p class="render"> contact : +92 300 1234567</p
+    ></div> 
+</div> 
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<!-- <script src="app.js"></script> -->
+</body>
+</html>
